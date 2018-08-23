@@ -9,7 +9,7 @@ Types::QueryType = GraphQL::ObjectType.define do
   end
 
   # field :oneLink, !types[Types::LinkType] do
-  #   argument :id, types.Id
-  #   resolve -> (obj, args, ctx) { Link.find(id) }
+  #   argument :id, types.ID
+  #   resolve -> (obj, args, ctx) { Link.find(args[:id]) }
   # end
 end
